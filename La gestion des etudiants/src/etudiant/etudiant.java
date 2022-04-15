@@ -17,5 +17,12 @@ public class etudiant {
 		// TODO Auto-generated method stub
 		return nom+":"+note;
 	}
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if(((etudiant)obj).id==this.id) return true;
+		else
+			return false;
+	}
 
 }
