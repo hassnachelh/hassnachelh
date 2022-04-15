@@ -1,6 +1,6 @@
 package etudiant;
 
-public class etudiant {
+public class etudiant  implements Comparable<etudiant>{
 	public static void main(String[]args ) {
 		
 	}
@@ -14,15 +14,20 @@ public class etudiant {
 	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+		
 		return nom+":"+note;
 	}
 	@Override
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
+		
 		if(((etudiant)obj).id==this.id) return true;
 		else
 			return false;
+	}
+	@Override
+	public int compareTo(etudiant o) {
+		if(this.note<o.note) return 1;
+		return 0;
 	}
 
 }
