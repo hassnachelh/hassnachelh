@@ -29,5 +29,6 @@ public class etudiant  implements Comparable<etudiant>{
 		if(this.note<o.note) return 1;
 		return 0;
 	}
+	
 
 }
