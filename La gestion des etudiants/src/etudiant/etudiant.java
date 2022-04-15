@@ -1,9 +1,7 @@
 package etudiant;
 
 public class etudiant  implements Comparable<etudiant>{
-	public static void main(String[]args ) {
-		
-	}
+	
 	private int id;
 	private String nom;
 	private double note;
@@ -12,6 +10,7 @@ public class etudiant  implements Comparable<etudiant>{
 		this.note=10;
 		this.nom=nom;	
 	}
+	
 	@Override
 	public String toString() {
 		
@@ -29,6 +28,7 @@ public class etudiant  implements Comparable<etudiant>{
 		if(this.note<o.note) return 1;
 		return 0;
 	}
+	
 	
 
 }
