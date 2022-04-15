@@ -12,6 +12,10 @@ public class etudiant {
 		this.note=10;
 		this.nom=nom;	
 	}
-	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return nom+":"+note;
+	}
 
 }
